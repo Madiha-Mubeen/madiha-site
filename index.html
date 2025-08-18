@@ -15,7 +15,7 @@
 
     <header class="bg-green-300 text-teal-800">
        <div class="container mx-auto p-4 px-4 py-4 flex justify-between items-center">
-        <h1 class="text-teal-800 text-2xl font-bold hover:text-teal-600">Madiha Mubeen's Site</h1>
+        <h1 class="text-teal-800 text-2xl font-bold hover:text-teal-600">Madiha Site</h1>
         <nav class="space-x-4">
             <a href="#about" class="text-teal-800 hover:text-teal-600 font-italic">About</a>
             <a href="#admire" class="text-teal-800 hover:text-teal-600 font-italic">Admire</a>
@@ -23,10 +23,10 @@
         </nav>
     </div>
 </header>
-
+ 
 <section id="hero" class="bg-emerald-80 py-15">
     <div class="container mx-auto p-4 px-4 text-center">
-        <h1 class="text-4xl p-4 font-bold mb-4">Hi, Madiha Mubeen Here !!!</h1>
+        <h1 id="typing-text" class="text-4xl p-4 font-bold mb-4 "></h1>
     </div>
 </section>
 
@@ -53,30 +53,52 @@
 </section>
  
 <hr class="bg-teal-300">
-
+<h1><img src="down-right-arrow.png" alt="arrow"></h1>
 <section id="project" class="py-14 bg-blue-300">
     <div class="container mx-auto p-4 px-4 text-center">
         <h2 class="text-green-800 font-semibold-italic text-3xl">What I have built till now ??</h2>
         <h3 class="text-lime-900 font-italic text-2xl">Let's see what are my first stage projects!!!</h3>
     </div>
     <div class="grid grid-cols-3 gap-4 text-teal-800 text-2xl font-italic hover:text-teal-600 p-4">
-        <div><a href="https://madiha-mubeen.github.io/tetris-game/">Tetris Game</a></div>
-        <div><a href="https://madiha-mubeen.github.io/memory-card-game/">Memory Card Game</a></div>
-        <div><a href="https://madiha-mubeen.github.io/Florious/">Florius</a></div>
+        <div class="bg-teal-200 border border-teal-700 rounded-lg p-6 shadow-md hover:shadow-lg text-center"><img src="tetris-screenShot.jpg" alt="tetris-game"><a href="">Tetris Game</a></div>
+        <div class="bg-teal-200 border border-teal-700 rounded-lg p-6 shadow-md hover:shadow-lg text-center"><img src="memory-card.jpg" alt="memory card game"><a href="">Memory Card Game</a></div>
+        <div class="bg-teal-200 border border-teal-700 rounded-lg p-6 shadow-md hover:shadow-lg text-center"><img src="florious.jpg" alt="florious" class=""><a href="">Florious</a></div>
     </div>
 </section>
  
+<hr>
 
+<section id="contact" class="py-16 bg-lime-200 text-center">
+    <h2 class="text-3xl font-semibold italic space-y-4 ">Connect with me <3 </h2>
+        <form class="max-w-md mx-auto space-y-4">
+            <input class="w-full p-2 border rounded-lg" type="text" placeholder="Name" required>
+            <input class="w-full p-2 border rounded-lg" type="Email" placeholder="Email" required>
+            <textarea placeholder="Message" class="w-full border rounded"></textarea>
+            <button class="bg-teal-600 text-grey px-4 py-2 rounded hover:bg-teal-300 italic">Waiting for your message :) </button>
+        </form>
+</section>
 <footer class="bg-green-300 text-teal-800 py-8 p-4 text-center">
     <h2 class="text-3xl font-bold">Let's Connect</h2>
-    <p>Email: <a href="mailto:madihahawaldar17@gmail.com" class="underline curl">madiha-mubeen</a></p>
-    <p>&copy; Built by Madiha Mubeen</p>
+    <p>Email: <a href="mailto:" class="underline curl"></a></p>
+    <p>&copy;</p>
 </footer>
 
 
  <script> 
-        alert("Hey! you just entered Madiha-Mubeen's Site!!!");
+      //  alert("Hey! you just entered Madiha Site!!!");
     
+
+        const text = "Hi, Madiha here !!!";
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typing-text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 150);
+            } 
+        }
+        window.onload = typeWriter;
  </script>
 </body>
 </html>

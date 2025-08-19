@@ -11,29 +11,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
 
 </head>
-<body class="bg-blue-300 text-teal-800">
 
-    <header class="bg-green-300 text-teal-800">
+<body class="bg-blue-300 text-teal-800">
+    <video  autoplay muted loop playsinline id="bg-video" class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+        <source src="bg-video.mp4" type="video/mp4">
+        Oh no! your browser do not support video 
+       
+    </video>
+    <header class="bg-blue-300 text-teal-800">
        <div class="container mx-auto p-4 px-4 py-4 flex justify-between items-center">
-        <h1 class="text-teal-800 text-2xl font-bold hover:text-teal-600">Madiha Site</h1>
+        <h1 class="text-blue-800 text-2xl font-bold hover:text-teal-600">爪卂ᗪ丨卄卂</h1>
         <nav class="space-x-4">
-            <a href="#about" class="text-teal-800 hover:text-teal-600 font-italic">About</a>
-            <a href="#admire" class="text-teal-800 hover:text-teal-600 font-italic">Admire</a>
-            <a href="#project" class="text-teal-800 hover:text-teal-600 font-italic">Projects</a>
+            <button class="bg-blue-500 text-grey px-4 py-2 rounded hover:bg-blue-200 italic"><a href="#about" class="text-teal-800 hover:text-teal-600 font-italic">About</a></button>
+            <button class="bg-blue-500 text-grey px-4 py-2 rounded hover:bg-blue-200 italic"><a href="#admire" class="text-teal-800 hover:text-teal-600 font-italic">Admire</a></button>
+            <button class="bg-blue-500 text-grey px-4 py-2 rounded hover:bg-blue-200 italic"><a href="#project" class="text-teal-800 hover:text-teal-600 font-italic">Projects</a></button>
         </nav>
     </div>
 </header>
- 
+
 <section id="hero" class="bg-emerald-80 py-15">
     <div class="container mx-auto p-4 px-4 text-center">
-        <h1 id="typing-text" class="text-4xl p-4 font-bold mb-4 "></h1>
+        <h1 id="typing-text" class="text-4xl p-4 font-bold mb-4 text-white"></h1>
     </div>
 </section>
 
 <section id="about" class="bg-emerald-80 py-15">
     <div class="container mx-auto p-4 px-4 text-center">
-        <h2 class="text-teal-800 text-3xl font-semibold-italic mb-4 text-center">About Madiha</h2>
-        <p class="text-emerald-800 text-2xl">
+        <h2 class="text-white text-3xl font-semibold-italic mb-4 text-center">About Madiha</h2>
+        <p class="text-white text-2xl">
                  A person who loves technology, design, and finding ways for creativity.
             I do really enjoy bulding websites using HTML, CSS, and JavaScript, and learning Tailwind CSS.
             I also loves to draw, learn new things every day!!!
@@ -41,7 +46,7 @@
     </div>
 </section>
 
-<hr class="bg-teal-300">
+
 
 <section id="admire"  class="bg-emerald-80 py-16">
     <div class="container mx-auto p-4 px-4 text-center">
@@ -69,6 +74,7 @@
 <hr>
 
 <section id="contact" class="py-16 bg-lime-200 text-center">
+    <h1><img src="flower (1).png" alt="flower"></h1>
     <h2 class="text-3xl font-semibold italic space-y-4 ">Connect with me <3 </h2>
         <form class="max-w-md mx-auto space-y-4">
             <input class="w-full p-2 border rounded-lg" type="text" placeholder="Name" required>
